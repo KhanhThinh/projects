@@ -13,9 +13,7 @@ This is the project for **Object Oriented Programming** in ***Vietnam National U
 > 19120250: Phạm Tiến Khải (@khailqd81)
 
 # Main features
-- `src` is the main source code folder, which is on the `master` branch
-- `report` is the main folder for Powerpoint and MS Word report.
-- `images` is the main folder for images used in the `report` folder. 
+- `src` is the main source code folder, which includes all the C++ files used in this seminar.
 - All things considered, this is the link for the "edited" version of all answers: [OOP For Life!](https://docs.google.com/document/d/1pNIm-q0aODbO6CjbVEGMsJKVa-lifrHfjafC3VTjwNI/edit?usp=sharing)
 
 # Some silly things for contributors:v
