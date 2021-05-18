@@ -1,6 +1,4 @@
-# OOP For Life!
-
-# Object Oriented Programming Project - Introduction
+# Object Oriented Programming Project - OOP For Life!
 
 This is the project for **Object Oriented Programming** in ***Vietnam National University of Ho Chi Minh City - University of Science - Faculty of Information Technology***
 
