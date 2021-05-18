@@ -4,11 +4,11 @@ This is the project for **Object Oriented Programming** in ***Vietnam National U
 
 # Contributors (a.k.a Developers :v)
 
-> 19120163: Bùi Lê Tuấn Anh (@anthony2708)
+19120163: [Bùi Lê Tuấn Anh](https://github.com/anthony2708)
 
-> 19120128: Ngô Nhật Tân (@CWLick)
+19120128: [Ngô Nhật Tân](https://github.com/CWLick)
 
-> 19120250: Phạm Tiến Khải (@khailqd81)
+19120250: [Phạm Tiến Khải](https://github.com/khailqd81)
 
 # Main features
 - `src` is the main source code folder, which includes all the C++ files used in this seminar.
