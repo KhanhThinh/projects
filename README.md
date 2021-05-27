@@ -14,7 +14,7 @@ This is the project for **Object Oriented Programming** in ***Vietnam National U
 - `src` is the main source code folder, which includes all the C++ files used in this seminar.
 - `docs` is the main report folder, including the MS Word and MS Powerpoint of this seminar.
 - `images` is the image folder, including all the images used for this seminar coursework
-- `helper` is the folder for cooperation between members in using Github
+- `helpers` is the folder for cooperation between members in using Github
 - All things considered, this is the link for the "edited" version of all answers: [OOP For Life!](https://docs.google.com/document/d/1pNIm-q0aODbO6CjbVEGMsJKVa-lifrHfjafC3VTjwNI/edit?usp=sharing)
 
 # Some silly things for contributors:v
