@@ -8,23 +8,23 @@ enum eCars{
 
 class CarsFactory{
 public:
-  CarsFactory(){}
-  ~CarsFactory(){}
   static Cars* produceCars(eCars _carsID){
+    Cars* newCar = NULL;
     switch (_carsID)
     {
       case PICKUP_TRUCK:
-        return new PickUpTruck();
+        newCar = new PickUpTruck;
         break;
       case SPORTS:
-        return new SportsCar();
+        newCar = new SportsCar;
         break;
       case CONVERTIBLE:
-        return new ConvertibleCar();
+        newCar = new ConvertibleCar;
         break; 
       default:
+        cout << "Invalid car!!!" << endl;
         return NULL;
-        break;
     }
+    newCar->output();
   }
 };

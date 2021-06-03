@@ -18,7 +18,6 @@ int main(void){
     int type; cin >> type;
     if (type > 0 && type <= 3){
       arrCars.at(i) = CarsFactory::produceCars(static_cast<eCars>(type));
-      arrCars.at(i)->output();
     } 
   }
   return 0;
