@@ -8,7 +8,7 @@ int main(void){
   {
     cout << "Your type of car " << i + 1 << ": "; 
     cin >> type;
-    if (type == 0) break;
+    if (type == 0 || type > 3) break;
     arrCars.push_back(CarsFactory::produceCars(static_cast<eCars>(type)));
     i++;
   }
