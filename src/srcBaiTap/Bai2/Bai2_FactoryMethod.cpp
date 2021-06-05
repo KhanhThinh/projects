@@ -1,8 +1,12 @@
-//19120128 - Ngo Nhat Tan
+#include "Vaccine.h"
+#include "StoreVaccine.h"
 
-#include <iostream>
-using namespace std;
-
-int main(void){
-  return 0;
+int main() {
+	VaccineArray* Arr = new VaccineArray();
+	Arr->input();
+	cout << "-------------------" << endl;
+	Arr->output();
+	_getch();
+	Arr->Search();
+	return 0;
 }
