@@ -9,6 +9,7 @@ class Vaccine {
 protected:
 	string ID;
 	string Name;
+	string Company;
 	int Type;
 public:
 	Vaccine() {
@@ -19,6 +20,8 @@ public:
 		getline(cin, ID);
 		cout << "Nhap vao ten vaccine: ";
 		getline(cin, Name);
+		cout << "Nhap vao ten cong ty san xuat: ";
+		getline(cin, Company);
 	}
 	virtual void output() = 0;
 	string getID() {
@@ -35,6 +38,7 @@ public:
 		cout << "ID cua vaccine: " << ID << endl;
 		cout << "Ten cua vaccine: " << Name << endl;
 		cout << "Loai vaccine: AstraZeneca" << endl;
+		cout << "Ten cong ty san xuat vaccine: " << Company << endl;
 	}
 };
 
@@ -47,6 +51,7 @@ public:
 		cout << "ID cua vaccine: " << ID << endl;
 		cout << "Ten cua vaccine: " << Name << endl;
 		cout << "Loai vaccine: NanoCovax" << endl;
+		cout << "Ten cong ty san xuat vaccine: " << Company << endl;
 	}
 };
 
@@ -59,5 +64,6 @@ public:
 		cout << "ID cua vaccine: " << ID << endl;
 		cout << "Ten cua vaccine: " << Name << endl;
 		cout << "Loai vaccine: Pfizer-BioNTech" << endl;
+		cout << "Ten cong ty san xuat vaccine: " << Company << endl;
 	}
 };
