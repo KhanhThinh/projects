@@ -31,11 +31,11 @@ public:
       cout << "Input the number of cars here: ";
       cin >> n;
     }while(n <= 0);
-    cout << "1 - Pickup Truck, 2 - Sports Cars, 3 - Convertible Cars, 0 - Exit" << endl;
+    cout << "1 - Pickup Truck, 2 - Sports Cars, 3 - Convertible Cars" << endl;
     arrCars.resize(n);
     int type;
     for (unsigned int i = 0; i < n;i++){
-      cout << "Input your type of car "<< i + 1 <<  " here:";
+      cout << "Input your type of car "<< i + 1 <<  " here: ";
       do{
         cin >> type;
         cin.ignore();

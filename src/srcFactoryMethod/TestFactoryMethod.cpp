@@ -7,5 +7,6 @@ int main(void){
   cout << "_______________" << endl;
   a->output();
   cout << "_______________" << endl;
+  a->moveToStore();
   return 0;
 }
