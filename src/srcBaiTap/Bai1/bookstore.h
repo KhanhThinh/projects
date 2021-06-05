@@ -29,7 +29,7 @@ public:
 };
 
 class BookArray: public Book, public BookStore{ //Lưu mảng để chứa lượng sách trong hiệu sách
-protected: //??? Protected hay private
+private: //private vẫn được
   vector<Book*> arrBook;
   int n;
 public:
