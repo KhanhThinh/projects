@@ -1,8 +1,5 @@
-#pragma once
 #include <iostream>
-#include <string>
 #include <vector>
-
 using namespace std;
 
 class Cars{
@@ -13,6 +10,9 @@ public:
 
 class PickUpTruck: public Cars{ //Xe bán tải
 public:
+  PickUpTruck(){
+    cout << "A pickup truck will be created!!!" << endl;
+  }
   void output(){
     cout << "A pickup truck is in production" << endl;
   }
@@ -23,6 +23,9 @@ public:
 
 class SportsCar: public Cars{ //Xe thể thao
 public:
+  SportsCar(){
+    cout << "A sports car will be created!!!" << endl;
+  }
   void output(){
     cout << "A sports car is in production" << endl;
   }
@@ -32,6 +35,10 @@ public:
 };
 
 class ConvertibleCar: public Cars{ //Xe mui trần
+public:  
+  ConvertibleCar(){
+    cout << "A convertible car will be created!!!" << endl;
+  }
   void output(){
     cout << "A convertible car is in production" << endl;
   }
@@ -40,38 +47,41 @@ class ConvertibleCar: public Cars{ //Xe mui trần
   }
 };
 
-class SpecializedVehicles{
+class AstraZenecaVan: public Cars{
 public:
-    virtual void outputVan() = 0;
-    virtual void deliverToGovernment() = 0;
-};
-
-class AstraZenecaVan: public SpecializedVehicles{
-public:
-    void outputVan(){
+    AstraZenecaVan(){
+      cout << "A van for AstraZeneca vaccines will be created!!!" << endl;
+    }
+    void output(){
         cout << "A van for AstraZeneca vaccines is in production!!!" << endl;
     }
-    void deliverToGovernment(){
+    void moveToStore(){
         cout << "The van for AstraZeneca vaccines has now been delivered to Government for emergency use." << endl;
     }
 };
 
-class NanoCovaxVan: public SpecializedVehicles{
+class NanoCovaxVan: public Cars{
 public:
-    void outputVan(){
+    NanoCovaxVan(){
+      cout << "A van for NanoCovax vaccines will be created!!!" << endl;
+    }
+    void output(){
         cout << "A van for NanoCovax vaccines is in production!!!" << endl;
     }
-    void deliverToGovernment(){
+    void moveToStore(){
         cout << "The van for NanoCovax vaccines has now been delivered to Government for emergency use." << endl;
     }
 };
 
-class PfizerVan: public SpecializedVehicles{
+class PfizerVan: public Cars{
 public:
-    void outputVan(){
+    PfizerVan(){
+        cout << "A van for Pfizer/BioNTech vaccines will be created!!!" << endl;
+    }
+    void output(){
         cout << "A van for Pfizer/BioNTech vaccines is in production!!!" << endl;
     }
-    void deliverToGovernment(){
+    void moveToStore(){
         cout << "The van for Pfizer/BioNTech vaccines has now been delivered to Government for emergency use." << endl;
     }
 };

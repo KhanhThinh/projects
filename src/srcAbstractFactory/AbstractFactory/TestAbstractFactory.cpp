@@ -17,7 +17,7 @@ int main(void){
   cout << "________________" << endl;
   b->outputVan();
   cout << "________________" << endl;
-  b->deliverToGovernment();
+  b->deliverToGov();
   cout << endl;
 
   return 0;

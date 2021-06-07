@@ -30,6 +30,7 @@ public:
 };
 
 class ConvertibleCar: public Cars{ //Xe mui trần
+public:  
   void output(){
     cout << "A convertible car is in production" << endl;
   }

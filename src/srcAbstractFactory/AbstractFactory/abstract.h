@@ -25,7 +25,7 @@ public:
         }
     }
 
-    static SpecializedVehicles* produceVans(eVans _vansID){
+    static sVehicles* produceVans(eVans _vansID){
         switch (_vansID)
         {
             case 1: return new AstraZenecaVan();

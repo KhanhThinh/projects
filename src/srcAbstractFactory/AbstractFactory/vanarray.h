@@ -2,9 +2,9 @@
 #include "header.h"
 #include "abstract.h"
 
-class VansArray: public SpecializedVehicles, public Factory{
+class VansArray: public sVehicles, public Factory{
 private:
-    vector<SpecializedVehicles*> arrVans;
+    vector<sVehicles*> arrVans;
     int n;
 public:
     void input(){
@@ -31,9 +31,9 @@ public:
           arrVans.at(i)->outputVan();
       }
   }
-  void deliverToGovernment(){
+  void deliverToGov(){
       for (unsigned int i = 0; i < n; i++){
-          arrVans.at(i)->deliverToGovernment();
+          arrVans.at(i)->deliverToGov();
       }
   }
 };
