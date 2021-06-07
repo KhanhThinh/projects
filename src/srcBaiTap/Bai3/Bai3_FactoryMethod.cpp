@@ -1,8 +1,13 @@
-//19120250 - Pham Tien Khai
+#include "Phone.h"
+#include "StorePhone.h"
 
-#include <iostream>
-using namespace std;
-
-int main(void){
-  return 0;
+int main()
+{
+	PhoneArray *Arr = new PhoneArray();
+	Arr->input();
+	cout << "-------------------" << endl;
+	Arr->output();
+	_getch();
+	Arr->Search();
+	return 0;
 }
