@@ -42,7 +42,7 @@ public:
 
     cout << "Hieu sach co: Truyen tranh(1), Sach van hoc(2), Sach ngoai van(3)" << endl;
     arrBook.resize(n);
-    int type;
+    int type = 0;
     for (unsigned int i = 0; i < n; i++){
       cout << "--> NHAP THE LOAI QUYEN SACH THU " << i + 1 << ": ";
       do{
