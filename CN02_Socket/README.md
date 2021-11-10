@@ -6,7 +6,7 @@ This is the project for **Computer Networking** in ***Vietnam National Universit
 
 > 19120163: Bùi Lê Tuấn Anh (@anthony2708)
 
-> 19120128: Ngô Nhật Tân (@CWLick)
+> 19120128: Ngô Nhật Tân (@tanngo2510)
 
 # Main features
 - `python.py` is the main file.
