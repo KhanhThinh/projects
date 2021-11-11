@@ -1,15 +1,13 @@
 import os
 import sys
-from DFS import *
-from BFS import *
-from AStar import *
-from Greedy import *
-
+from search import *
 from UI import *
+
+# Global variables
 BASE_DIR = os.path.dirname(os.path.realpath(__file__)) + '/..'
 MAPS_DIR = BASE_DIR + '/test'
 
-
+# Usage: python main.py [algorithm] [mazefile]
 if (len(sys.argv) < 3):
     raise SyntaxError('Invalid syntax')
 else:
@@ -21,6 +19,7 @@ else:
         print('File not found: ' + map_name)
         exit(1)
 
+    # Print the information of the matrix
     print(f'The height of the matrix: {len(matrix)}')
     print(f'The width of the matrix: {len(matrix[0])}')
 
@@ -34,8 +33,10 @@ else:
             else:
                 pass
 
+    # Check the correct algorithm
     if (algorithm == 'dfs'):
         route = DFS(matrix, start, end)
+        pass
     elif (algorithm == 'bfs'):
         route = BFS(matrix, start, end)
         pass
@@ -45,5 +46,13 @@ else:
     elif (algorithm == 'greedy'):
         route = Greedy(matrix, start, end, bonus_points)
         pass
+    else:
+        print('Wrong algorithm')  # Exit when receiving wrong algorithm
+        exit(1)
 
-    visualize_maze(matrix, bonus_points, start, end, route)
+    if route is None:  # No route was found
+        visualize_maze(matrix, bonus_points, start, end)
+        print('No route to found from starting point to ending point')
+        exit(2)
+    else:  # A route is found
+        visualize_maze(matrix, bonus_points, start, end, route)
