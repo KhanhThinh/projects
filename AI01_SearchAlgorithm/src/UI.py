@@ -58,11 +58,21 @@ def visualize_maze(matrix, bonus, start, end, route=None):
     print(f'Starting point (x, y) = {start[0], start[1]}')
     print(f'Ending point (x, y) = {end[0], end[1]}')
     print(f'The route to go: {route}')
-    print(f'Length of route = {len(route) - 2}')
 
-    for _, point in enumerate(bonus):
+    # Sum of bonus points
+    bonus_point = 0
+
+    for _, point in enumerate(bonus):  # Traverse for any bonus points
         print(
             f'Bonus point at position (x, y) = {point[0], point[1]} with point {point[2]}')
+
+    for _, plus in enumerate(route):  # Check for visiting any bonus point
+        for _, point in enumerate(bonus):
+            if ({plus[0], plus[1]} == {point[0], point[1]}):
+                bonus_point += point[2]
+
+    # Calculating the length of route
+    print(f'Length of route = {len(route) - 2 + bonus_point}')
 
 
 def readfile(file_name: str = ''):

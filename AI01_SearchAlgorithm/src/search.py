@@ -14,7 +14,7 @@ def BFS(matrix, start, end):
             if neighbor not in visited:
                 open_list.append(neighbor)
                 visited.append(neighbor)
-    return closed_list
+    return None
 
 
 # DFS
@@ -26,10 +26,7 @@ def DFS(matrix, start, end):
         route.append(n)
         if n == end:
             return route
-
-        next_step = find_next(n, matrix)
-
-        for x in next_step:
+        for x in find_next(n, matrix):
             if x not in visited:
                 visited.append(x)
                 stack.append(x)
@@ -55,21 +52,17 @@ def Greedy(matrix, start, end, bonus_points):
 
 # A*
 def AStar(matrix, start, end):
-    F, G = {}, {}
+    F, G, camefrom = {}, {}, {}
     G[start] = 0
     F[start] = heuristic_distance(start, end)
-    closed = []
-    opened = [start]
-    camefrom = {}
+    opened, closed = [start], []
 
     while opened:
-        current = None
-        currentF = None
+        current, currentF = None, None
         for pos in opened:
             if current is None or F[pos] < currentF:
                 currentF = F[pos]
                 current = pos
-
         if current == end:
             route = [current]
             while current in camefrom:
@@ -77,20 +70,17 @@ def AStar(matrix, start, end):
                 route.append(current)
             route.reverse()
             return route
-
         opened.remove(current)
         closed.append(current)
-        next_step = find_next(current, matrix)
-        for neighbor in next_step:
+
+        for neighbor in find_next(current, matrix):
             if neighbor in closed:
                 continue
             candidateG = G[current] + actual_distance(current, start)
-
             if neighbor not in opened:
                 opened.append(neighbor)
             elif candidateG >= G[neighbor]:
                 continue
-
             camefrom[neighbor] = current
             G[neighbor] = candidateG
             H = heuristic_distance(neighbor, end)

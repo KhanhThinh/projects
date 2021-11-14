@@ -21,7 +21,8 @@ def heuristic_distance(node, end):
 def heuristic_distance_bonus(node, end, bonus_points):
     for _, points in enumerate(bonus_points):
         if node == (points[0], points[1]):
-            return points[2]
+            return points[2] + sqrt((node[0] - end[0])**2 + (node[1] - end[1])
+                                    ** 2)
     return sqrt((node[0] - end[0])**2 + (node[1] - end[1])**2)
 
 
