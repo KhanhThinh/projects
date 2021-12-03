@@ -1,0 +1,60 @@
+{
+    "lastUpdate": "13/10/2021",
+    "cols": [
+        {
+            "data": "MSHV"
+        },
+        {
+            "data": "Họ tên",
+            "orderable": false
+        },
+        {
+            "data": "+",
+            "orderable": false
+        },
+        {
+            "data": "Practice",
+            "orderable": false
+        },
+        {
+            "data": "Test",
+            "orderable": false
+        },
+        {
+            "data": "End-term",
+            "orderable": false
+        },
+        {
+            "data": "Final"
+        }
+    ],
+    "data": [
+        {
+            "MSHV": 101,
+            "Họ tên": "Phạm Thị Trang Anh",
+            "+": 0,
+            "Practice": 13.16,
+            "Test": 3.85,
+            "End-term": 0,
+            "Final": 17.01
+        },
+        {
+            "MSHV": 102,
+            "Họ tên": "Lê Hồ Minh Châu",
+            "+": 4,
+            "Practice": 15,
+            "Test": 5,
+            "End-term": 0,
+            "Final": 20
+        },
+        {
+            "MSHV": 103,
+            "Họ tên": "Nguyễn Hoàng Bảo Trâm",
+            "+": 0,
+            "Practice": 4.55,
+            "Test": 0,
+            "End-term": 0,
+            "Final": 4.55
+        }
+    ]
+}

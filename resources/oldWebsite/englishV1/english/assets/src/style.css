@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+body {
+    overflow-x: hidden;
+    font-family: "Lato", sans-serif;
+    color: #505962;
+}
+
+.offset:before {
+    display: block;
+    content: "";
+    height: 4rem;
+    margin-top: -4rem;
+}
+
+.navbar {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 0.1rem;
+}
+
+.navbar-brand img {
+    height: 2rem;
+}
+
+.navbar-nav li {
+    padding-right: 0.7rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+    padding-top: 0.5rem;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: cyan;
+}
+
+.landing {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: table;
+    background: #e9ecef;
+    z-index: -1;
+}
+
+.home-wrap {
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.home-inner {
+    position: fixed;
+    display: table;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    will-change: transform;
+    background-image: url("../../img/public/English.jpg");
+    opacity: 0.5;
+}
+
+.caption {
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 38%;
+    z-index: 1;
+    color: black;
+    text-transform: uppercase;
+}
+
+.caption h1 {
+    font-size: 3.8rem;
+    font-weight: 700;
+    letter-spacing: 0.3rem;
+    text-shadow: 0.1rem 0.1rem 0.6rem black;
+    padding-bottom: 1rem;
+}
+
+.caption h3 {
+    font-style: 2rem;
+    text-shadow: 0.1rem 0.1rem 0.5rem black;
+    padding-bottom: 1.6rem;
+}
+
+.btn-lg {
+    border-width: medium;
+    border-radius: 0;
+    padding: 0.6rem 1.3rem;
+    font-size: 1.1rem;
+    color: rgba(0, 0, 0, 1);
+    border-color: black;
+}
+
+.btn-lg:hover {
+    background-color: black;
+    color: white;
+    border-color: black;
+}
+
+.narrow {
+    width: 75%;
+    margin: 1.5rem auto;
+    padding-top: 2rem;
+}
+
+.narrow h1 {
+    font-size: 2.4rem;
+}
+
+.btn-secondary {
+    border-width: medium;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    padding: 0.6rem 1.2rem;
+    margin: 1rem;
+    color: white;
+    background-color: blue;
+    border-color: blue;
+}
+
+.btn-secondary:hover {
+    background-color: darkblue;
+    border-color: darkblue;
+}
+
+.jumbotron {
+    margin-bottom: 0;
+    padding: 2rem 0 3.5rem;
+    border-radius: 0;
+}
+
+h3.heading {
+    font-size: 1.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1.9rem;
+}
+
+h4.heading {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1.9rem;
+    white-space: nowrap;
+}
+
+.heading-underline {
+    width: 3rem;
+    height: 0.2rem;
+    background-color: blue;
+    margin: 0 auto 2rem;
+}
+
+#assignments a {
+    color: #222;
+}
+
+#assignments a:hover {
+    color: #40474e;
+}
+
+footer {
+    background-color: #40474e;
+    color: white;
+    padding: 1rem 0 2rem;
+    margin-top: 1rem;
+}
+
+footer img {
+    height: 4rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+footer a {
+    color: white;
+    font-size: 1.6rem;
+    margin: 1.2rem 0.5rem 0 0;
+}
+
+footer a:hover {
+    color: aquamarine !important;
+}
+
+hr.socket {
+    width: 100%;
+    border-top: 0.2rem solid #666b71;
+    margin-top: 3rem;
+}
+
+@media (max-width: 767px) {
+    .caption h1 {
+        font-size: 2.3rem;
+        letter-spacing: 0.15rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .caption h3 {
+        font-style: 1.2rem;
+        padding-bottom: 1.2rem;
+    }
+
+    .btn-lg {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+
+    .narrow h1 {
+        font-size: 1.5rem;
+    }
+
+    .col-md-6 {
+        margin-top: 1.5rem;
+    }
+}

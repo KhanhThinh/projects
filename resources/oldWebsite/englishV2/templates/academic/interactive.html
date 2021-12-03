@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% block index %}
+<div id="interactive">
+    <div class="col-12">
+        <h3 class="heading text-center">Tương tác</h3>
+        <div class="heading-underline"></div>
+    </div>
+    <div class="row align-items-md-stretch mb-4">
+        <div class="col-md-6">
+            <div class="h-100 p-5 text-black bg-light border rounded-3">
+                <h2>Bảng điểm</h2>
+                <!-- Scoreboard -->
+                <div id="scoreboard" class="offset">
+                    <div class="narrow">
+                        <div class="card-body">
+                            <div class="alert alert-primary" role="alert">
+                                Nhập <b>MSHV</b> vào ô <b>Tìm kiếm</b> để tra cứu.
+                            </div>
+                            <div class="table-responsive">
+                                <table id="myTable" class="table table-bordered table-striped table-hover"></table>
+                            </div>
+                        </div>
+
+                        <span class="float-end fst-italic fw-light">
+                            Cập nhật ngày
+                            <span id="lastUpdate"></span>
+                        </span>
+                    </div>
+                </div>
+                <!--Scoreboard section end -->
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="h-100 p-5 bg-secondary text-white border rounded-3">
+                <div id="ff-compose"></div>
+                <script async defer
+                    src="https://formfacade.com/include/105890573489429901196/form/1FAIpQLScsxKMW-OMsiOcBuH9oUmUai6VQvpwOAjZo-ow3mFubgmUfIg/classic.js?div=ff-compose"></script>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block js %}
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Data table JS-->
+<script src="https://cdn.datatables.net/1.11.2/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.11.2/js/dataTables.bootstrap5.min.js"></script>
+
+<script src="{{ url_for('static', filename='js/app.js') }}"></script>
+{% endblock %}

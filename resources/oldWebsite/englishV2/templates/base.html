@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Teaching - Trang chủ</title>
+
+    {% include "include/ownCSS.html" %}
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}" type="image/x-icon">
+
+</head>
+
+<body>
+    <main>
+        <div class="container py-4">
+            {% include "include/header.html" %}
+            {% block index %} {% endblock %}
+            {% include "include/footer.html" %}
+        </div>
+    </main>
+
+    {% include "include/ownJS.html" %}
+    {% block js %} {% endblock %}
+</body>
+
+</html>
